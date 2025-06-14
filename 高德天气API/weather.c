@@ -33,7 +33,7 @@ int main()
     \r\n
 
     */
-    char * http_str = "GET https://restapi.amap.com/v3/weather/weatherInfo?key=你的密钥&city=城市的Unicode编码 HTTP/1.1\r\nHost:restapi.amap.com\r\n\r\n";
+    char * http_str = "GET https://restapi.amap.com/v3/weather/weatherInfo?key=你的密钥&city=城市的adcode编码 HTTP/1.1\r\nHost:restapi.amap.com\r\n\r\n";
     //发送Http报文
     write(socket_fd, http_str, strlen(http_str));
     //接收服务器返回的数据
